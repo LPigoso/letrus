@@ -25,7 +25,7 @@ Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Go
 
 (Todas as imagens abaixo possuem a respectiva query disponilizada no arquivo texto)
 
-1. Para auxiliar os professores a terem uma visão panorâmica, entendo que é importante terem um comparativo de quais projetos possuem atividades com baixas notas, pois acaba sendo um indicativo de que deve-se olhar mais de perto esses projetos. Desta forma, criei duas views que podem auxiliar nesse sentido:
+**1.** Para auxiliar os professores a terem uma visão panorâmica, entendo que é importante terem um comparativo de quais projetos possuem atividades com baixas notas, pois acaba sendo um indicativo de que deve-se olhar mais de perto esses projetos. Desta forma, criei duas views que podem auxiliar nesse sentido:
 
 Visão geral de atividade por atividade, nota a nota
 
@@ -35,6 +35,12 @@ Visão geral dos projetos, já calculado a média das notas
 
 ![image](https://user-images.githubusercontent.com/33936130/184224053-c8878292-d8a6-409a-94aa-da6e6278e800.png)
 
+
+**2.**  Para dar melhor visiblidade de engajamento, podemos analisar como os projetos se comportam em relação aos outros, assim como de que forma evoluem ano a ano:
+
+![image](https://user-images.githubusercontent.com/33936130/184226648-6456c6ba-e131-415b-a264-946c62147b1e.png)
+
+Assim como podemos notar quais cidades possuem maior aderência. (Neste caso, entendo que as cidades são respectivas ao _usuario_, pois na tabela **endereço** temos a coluna _id_usuario_ para correlacionar)
 
 ## Fase 3
 
