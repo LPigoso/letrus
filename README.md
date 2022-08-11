@@ -56,7 +56,7 @@ Também podemos notar quais cidades possuem maior aderência. (Neste caso, enten
 - As atividades possuem valor de coluna id_projeto até o valor 49, porém temos 1500 projetos, ou seja, não é possível fazer o relacionamento entre a maioria deles;
 - As atividades possuem valor de coluna id_projeto 0, porém não há existência desse projeto; entre outros
 
-Além disso, podemos procurar por padrões/anomalias de forma estatística. Através de Python, realizei uma construção bem simples, que permite visualizarmos o comportamento das notas (tabela **notas**). Há inúmeras outras análises estatísticas que podem ser realizadas nesta e em outras tabelas:
+Além disso, podemos procurar por padrões/anomalias de forma estatística. Através de **_Python_**, realizei uma construção bem simples, que permite visualizarmos o comportamento das notas (tabela **notas**). Há inúmeras outras análises estatísticas que podem ser realizadas nesta e em outras tabelas:
 
 - Histograma de notas finais: podemos através dele como estão distribuídas as notas finais. Percemos que ocorre de alguma forma "binária", portanto, esse valor acaba sendo 0 ou 10, com exceção dos casos de valor nulo. Também notamos como há maior frequência de valores 10
 
