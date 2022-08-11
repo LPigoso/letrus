@@ -75,4 +75,4 @@ Além disso, podemos procurar por padrões/anomalias de forma estatística. Atra
 
 ## Fase 3
 
-Como já citado acima, os arquivos para esta etapa - com todas as queries que foram utilizadas- encontram-se em **_Fase 3 - Queries.txt_**
+Como já citado acima, os arquivos para esta etapa - com todas as queries que foram utilizadas- encontram-se em [**_Fase 3 - Queries.txt_**](https://github.com/LPigoso/letrus/blob/main/Fase%203%20-%20Queries.txt)
