@@ -58,11 +58,11 @@ Também podemos notar quais cidades possuem maior aderência. (Neste caso, enten
 
 Além disso, podemos procurar por padrões/anomalias de forma estatística. Através de Python, realizei uma construção bem simples, que permite visualizarmos o comportamento das notas (tabela **notas**):
 
-Histograma de notas finais: podemos através dele como estão distribuídas as notas finais. Percemos que ocorre de alguma forma "binária", portanto, esse valor acaba sendo 0 ou 10, com exceção dos casos de valor nulo. Também notamos como há maior frequência de valores 10
+1.Histograma de notas finais: podemos através dele como estão distribuídas as notas finais. Percemos que ocorre de alguma forma "binária", portanto, esse valor acaba sendo 0 ou 10, com exceção dos casos de valor nulo. Também notamos como há maior frequência de valores 10
 
 ![Histograma notas finais](https://user-images.githubusercontent.com/33936130/184229926-c844d481-7d18-4b1d-83f4-f00b6a4941da.png)
 
-Boxplot das notas 1, 2, 3 e 4: percebemos que não há outliers e que as notas se comportam de forma semelhante, acabamos vendo que há um comportamento que não contem inconsistências.
+2.Boxplot das notas 1, 2, 3 e 4: percebemos que não há outliers e que as notas se comportam de forma semelhante, acabamos vendo que há um comportamento que não contem inconsistências.
 
 ![Boxplot notas](https://user-images.githubusercontent.com/33936130/184229939-c3165b22-f292-47ca-a46b-f92f809b3d40.png)
 
