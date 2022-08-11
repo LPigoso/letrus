@@ -67,7 +67,7 @@ Além disso, podemos procurar por padrões/anomalias de forma estatística. Atra
 ![Boxplot notas](https://user-images.githubusercontent.com/33936130/184229939-c3165b22-f292-47ca-a46b-f92f809b3d40.png)
 
 
-**4.** Para identificar melhores índices de nota x engajamento calculei o total de atividades por projeto e a média das notas finais dessas atividades:
+**4.** Para identificar melhores índices de nota x engajamento calculei o total de atividades por projeto e a média das notas finais dessas atividades. A maioria dos projetos possue entre 2.9k e 3.0k atividades, como é uma diferença de apenas 3,4%, entendo que é mais interessante darmos destaque na média de notas, que variam entre 7.9 e 10
 
 ![image](https://user-images.githubusercontent.com/33936130/184234671-30041899-42b1-4723-9786-46c8c526e03e.png)
 
