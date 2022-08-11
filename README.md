@@ -67,6 +67,12 @@ Além disso, podemos procurar por padrões/anomalias de forma estatística. Atra
 ![Boxplot notas](https://user-images.githubusercontent.com/33936130/184229939-c3165b22-f292-47ca-a46b-f92f809b3d40.png)
 
 
+**4.** Para identificar melhores índices de nota x engajamento calculei o total de atividades por projeto e a média das notas finais dessas atividades:
+
+![image](https://user-images.githubusercontent.com/33936130/184234671-30041899-42b1-4723-9786-46c8c526e03e.png)
+
+
+
 ## Fase 3
 
 Como já citado acima, os arquivos para esta etapa - com todas as queries que foram utilizadas- encontram-se em **_Fase 3 - Queries.txt_**
