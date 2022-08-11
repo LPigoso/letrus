@@ -1,0 +1,349 @@
+Fase 1:
+
+1. Projetos com suas atividades
+
+with p as(
+select * 
+from public.projetos),
+a as (
+select * 
+from public.atividades)
+select
+	p.id,
+	p.nome as nome_projeto,
+	p.data_inicio as inicio_projeto,
+	p.data_fim as fim_projeto,
+	a.nome as nome_atividade,
+	a.data_inicio as inicio_atividade,
+	a.data_fim as fim_atividade
+from p
+left join a
+	on p.id_usuario = a.id_usuario
+
+
+2. Atividades do usuário escolhido em 2022
+
+with a as (
+select * 
+from public.atividades),
+u as (
+select * 
+from public.usuarios)
+select 
+	u.login,
+	a.nome,
+	a.data_inicio,
+	a.data_fim
+from a
+left join u
+	on a.id_usuario = u.id
+
+
+3. Atividades por projeto em 2021
+
+with p as(
+select * 
+from public.projetos),
+a as (
+select * 
+from public.atividades)
+select
+	p.id,
+	p.nome,
+    DATE_PART('year', a.data_inicio),
+	count(a.nome)
+from p
+left join a
+	on p.id = a.id_projeto
+group by p.nome, p.id, DATE_PART('year', a.data_inicio)
+order by p.id
+
+
+4. Atividades (em ordem hierárquica) do projeto LetrusTIC
+
+with p as(
+select * 
+from public.projetos),
+a as (
+select * 
+from public.atividades)
+select
+	p.nome as nome_projeto,
+	a.nome as nome_atividade,
+	a.data_inicio,
+	a.data_fim
+from p
+left join a
+	on p.id = a.id_projeto
+order by a.nome
+
+
+5. Excluir o projeto LetrusTIC
+
+delete from public.projetos 
+where nome = 'LetrusTIC'
+
+
+6. Pessoas que estão no projeto "Concurso de Redacao"
+
+with p as (
+select * 
+from public.projetos p),
+u as (
+select * 
+from public.usuarios)
+select 
+	u.id,
+	u.nome
+from p
+left join u
+	on p.id_usuario = u.id
+
+
+7. Adicionar 15 dias (prazo final) às atividades do projeto "Concurso de Redacao"
+
+update public.projetos 
+set data_fim = data_fim - interval '15 day'
+where nome = "Concurso de Redacao"
+
+
+8. Excluir todas as atividades do usuário "João 33"
+
+delete from public.atividades a
+where a.id_usuario in(
+select a.id_usuario from public.atividades a 
+left join public.usuarios u
+	on a.id_usuario = u.id
+where u.nome = "João 33")
+
+
+11. Criar view com usuários em cidade SP e nota final entre 7-10
+
+
+create view saopaulo_7a10 as
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+ao as (
+select * from public.ativo)
+select 
+	u.id as id_usuario,
+	u.nome,
+	ao.descricao,
+	e.cidade,
+	a.id as id_atividade,
+	n.nota_final
+from u
+left join ao
+	on u.id_ativo = ao.id
+left join a
+	on u.id = a.id_usuario
+left join e
+	on u.id = e.id_usuario
+left join n
+	on a.id = n.id_atividade
+where e.cidade = 'São Paulo' and 
+n.nota_final > 7
+
+
+
+Fase 2:
+
+1.1 Ajudar o professor a criar melhores conteúdos de aula (verificando quais atividades de quais projetos possuem menores notas)
+
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+p as (
+select * from public.projetos p)
+select
+	p.id as id_projeto,
+	a.id as id_atividade,
+	n.nota1,
+	n.nota2,
+	n.nota3,
+	n.nota4,
+	n.nota_final
+from u
+left join p
+	on u.id = p.id_usuario
+left join a
+	on u.id = a.id_usuario
+left join e
+	on u.id = e.id_usuario
+left join n
+	on a.id = n.id_atividade
+where n.nota_final is not null and 
+p.id is not null
+
+1.2 Ajudar o pro...
+
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+p as (
+select * from public.projetos p)
+select
+	p.id as id_projeto,
+	cast(avg(n.nota1) as decimal(10,1)),
+	cast(avg(n.nota2) as decimal(10,1)),
+	cast(avg(n.nota3) as decimal(10,1)),
+	cast(avg(n.nota4) as decimal(10,1)),
+	cast(avg(n.nota_final) as decimal(10,1))
+from u
+left join p
+	on u.id = p.id_usuario
+left join a
+	on u.id = a.id_usuario
+left join e
+	on u.id = e.id_usuario
+left join n
+	on a.id = n.id_atividade
+where n.nota_final is not null and 
+p.id is not null
+group by p.id
+
+2. Engajamento dos alunos nas atividades por projeto, cidade
+
+.. (Não é útil) Lista de projetos, atividades e usuarios
+
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+p as (
+select * from public.projetos p)
+select
+	p.id as id_projeto,
+	p.nome as nome_projeto,
+	a.id as id_atividade,
+	u.id as id_usuario
+from a
+left join u
+	on a.id_usuario = u.id
+left join p
+	on a.id_projeto = p.id
+where id_projeto is not null
+order by id_projeto
+
+.. Agrupamento e contagem de atividades por projeto (ano a ano)
+
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+p as (
+select * from public.projetos p)
+select
+	p.id as id_projeto,
+	p.nome as nome_projeto,
+	sum(case when DATE_PART('year', a.data_inicio) = 2021 then 1 else 0 end) as ativid_inicio_2021,
+	sum(case when DATE_PART('year', a.data_inicio) = 2022 then 1 else 0 end) as ativid_inicio_2022,
+	sum(case when DATE_PART('year', a.data_inicio) = 2023 then 1 else 0 end) as ativid_inicio_2023,
+	sum(case when DATE_PART('year', a.data_inicio) = 2024 then 1 else 0 end) as ativid_inicio_2024,
+	count(a.id) as cont_atividades
+from a
+left join p
+	on a.id_projeto = p.id
+where id_projeto is not null
+group by p.id, p.nome
+order by p.id
+
+.. Agrupamento e contagem de cidades onde ocorrem as atividades dos alunos
+
+with u as (
+select * 
+from public.usuarios),
+a as (
+select *
+from public.atividades),
+n as (
+select *
+from public.notas),
+e as (
+select *
+from public.endereco),
+p as (
+select * from public.projetos p)
+select
+	e.cidade as cidade_do_usuario,
+	count(p.id) as cont_projetos
+from a
+left join p
+	on a.id_projeto = p.id
+left join e
+	on a.id_usuario = e.id_usuario
+where id_projeto is not null
+group by e.cidade
+order by e.cidade
+
+
+4. Atividades com melhores índices nota x engajamento
+
+with p as(
+select * 
+from public.projetos),
+a as (
+select * 
+from public.atividades),
+n as (
+select * 
+from public.notas)
+select
+	p.id,
+	p.nome,
+	count(a.nome) as cont_atividades,
+	cast(avg(n.nota_final) as decimal(10,1)) as media_notas
+from p
+left join a
+	on p.id = a.id_projeto
+left join n
+	on a.id = n.id_atividade
+where a.nome is not null
+group by p.nome, p.id
+order by media_notas desc
+
+
