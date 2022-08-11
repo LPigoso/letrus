@@ -16,7 +16,7 @@ TB *Ativo*
 
 Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Google + Excel
 
-- Os relatórios solicitados (dashboard) encontram-se no Pdf [**_DataStudio Letrus - Filtrado_**](https://github.com/LPigoso/letrus/blob/main/DataStudio%20Letrus%20-%20Filtrado.pdf) e também podem ser acessados por meio do [[link](https://datastudio.google.com/reporting/c081106b-eb0e-41fe-bff3-50d77afc4a74)]. É possível perceber que os gráficos não estão filtrados (também em pdf [[**_DataStudio Letrus - Default_**](https://github.com/LPigoso/letrus/blob/main/DataStudio%20Letrus%20-%20Default.pdf)]), ou seja, não filtrei as queries pois me parece mais interessante, do ponto de vista do usuário, ter escalabilidade para filtrar da forma que achar ideal.
+- Os relatórios solicitados (dashboard) encontram-se no Pdf [**_DataStudio Letrus - Filtrado_**](https://github.com/LPigoso/letrus/blob/main/DataStudio%20Letrus%20-%20Filtrado.pdf) e também podem ser acessados por meio do [link](https://datastudio.google.com/reporting/c081106b-eb0e-41fe-bff3-50d77afc4a74). É possível perceber que os gráficos não estão filtrados (também em pdf [**_DataStudio Letrus - Default_**](https://github.com/LPigoso/letrus/blob/main/DataStudio%20Letrus%20-%20Default.pdf)), ou seja, não filtrei as queries pois me parece mais interessante, do ponto de vista do usuário, ter escalabilidade para filtrar da forma que achar ideal.
 
 - Já as alterações (exclusões, edições, views) eu realizei por meio de queries, estou disponibilizando-as no arquivo **_Fase 3 - Queries.txt_** e fazem parte do que está solicitado na Fase 3. Caso seja necessário acesso ao banco de dados, vou deixá-lo no e-mail respectivo ao teste.
 
