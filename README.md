@@ -41,7 +41,7 @@ Visão geral dos projetos, já calculado a média das notas
 ![image](https://user-images.githubusercontent.com/33936130/184226648-6456c6ba-e131-415b-a264-946c62147b1e.png)
 
 - Caso fosse inserido em dashboard, poderíamos ter algo como:
-(Para este dash, filtrei apenas 3 projetos, porém esse filtro poderia ser feito de forma livre, de forma a podermos entender quais projetos possuem maior alcance e crescimento)
+(Para este dash, filtrei apenas 3 projetos, porém esse filtro poderia ser feito de forma livre, de forma a podermos entender quais projetos possuem maior alcance e crescimento de forma relativa)
 
 ![Atividades por periodo](https://user-images.githubusercontent.com/33936130/184227213-05067d25-c7c9-4ff9-bad3-e79db3e6dc56.png)
 
