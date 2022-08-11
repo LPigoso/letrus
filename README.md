@@ -16,4 +16,4 @@ Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Go
 
 
 
-Os relatórios solicitados encontram-se no **_Pdf DataStudio Letrus - Filtrado_**
+Os relatórios solicitados (dashboard) encontram-se no **_Pdf DataStudio Letrus - Filtrado_** e também podem ser acessados por meio do link https://datastudio.google.com/reporting/c081106b-eb0e-41fe-bff3-50d77afc4a74. É possível perceber que os gráficos não se encontram filtrados (também em **_DataStudio Letrus - Default_**), ou seja, não filtrei as queries, pois me parece mais interessante, do ponto de vista do usuário, ter escalabilidade para filtrar da forma que achar ideal.
