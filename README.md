@@ -21,6 +21,13 @@ Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Go
 
 ## Fase 2
 
+(Todas as imagens abaixo possuem a respectiva query disponilizada no arquivo texto)
+
+1. Para auxiliar os professores a terem uma visão panorâmica, entendo que é importante terem um comparativo de quais projetos possuem atividades com baixas notas, pois acaba sendo um indicativo de que deve-se olhar mais de perto esses projetos. Desta forma, criei duas views que podem auxiliar nesse sentido:
+
+![image](https://user-images.githubusercontent.com/33936130/184224053-c8878292-d8a6-409a-94aa-da6e6278e800.png)
+
+![image](https://user-images.githubusercontent.com/33936130/184224116-d6d87c07-9e11-41db-9673-fe47b0629cd6.png)
 
 ## Fase 3
 
