@@ -13,3 +13,6 @@ TB *Ativo*
 ![image](https://user-images.githubusercontent.com/33936130/184216166-ba6dfc8b-59ef-4137-be3a-7eaa5d56b6ef.png)
 
 Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Google + Excel
+
+
+##### Os relatórios solicitados encontram-se no **_Pdf DataStudio Letrus - Filtrado_**
