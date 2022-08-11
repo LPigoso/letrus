@@ -40,7 +40,13 @@ Visão geral dos projetos, já calculado a média das notas
 
 ![image](https://user-images.githubusercontent.com/33936130/184226648-6456c6ba-e131-415b-a264-946c62147b1e.png)
 
-Assim como podemos notar quais cidades possuem maior aderência. (Neste caso, entendo que as cidades são respectivas ao _usuario_, pois na tabela **endereço** temos a coluna _id_usuario_ para correlacionar)
+- Caso fosse inserido em dashboard, poderíamos ter algo como:
+
+![Atividades por periodo](https://user-images.githubusercontent.com/33936130/184227213-05067d25-c7c9-4ff9-bad3-e79db3e6dc56.png)
+
+Também podemos notar quais cidades possuem maior aderência. (Neste caso, entendo que as cidades são respectivas ao _usuario_, pois na tabela **endereço** temos a coluna _id_usuario_ para correlacionar):
+
+![image](https://user-images.githubusercontent.com/33936130/184227297-842fee8f-ab5d-42cc-8c03-15016eb1c877.png)
 
 ## Fase 3
 
