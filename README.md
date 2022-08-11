@@ -62,7 +62,7 @@ Além disso, podemos procurar por padrões/anomalias de forma estatística. Atra
 
 ![Histograma notas finais](https://user-images.githubusercontent.com/33936130/184229926-c844d481-7d18-4b1d-83f4-f00b6a4941da.png)
 
--- Boxplot das notas 1, 2, 3 e 4: percebemos que não há outliers e que as notas se comportam de forma semelhante, acabamos vendo que há um comportamento que não contem inconsistências.
+- Boxplot das notas 1, 2, 3 e 4: percebemos que não há outliers e que as notas se comportam de forma semelhante, acabamos vendo que há um comportamento que não contem inconsistências.
 
 ![Boxplot notas](https://user-images.githubusercontent.com/33936130/184229939-c3165b22-f292-47ca-a46b-f92f809b3d40.png)
 
