@@ -49,6 +49,24 @@ Também podemos notar quais cidades possuem maior aderência. (Neste caso, enten
 
 ![image](https://user-images.githubusercontent.com/33936130/184227297-842fee8f-ab5d-42cc-8c03-15016eb1c877.png)
 
+**3.** Sobre padrões e anomalias, há algumas situações que pude notar durante a prática. Como:
+
+- Os projetos, apesar de conterem id, sem nome definidos;
+- Os projetos que estão relacionados a id_usuario inexistente - não há usuários com id acima de 1500, porém a maioria dos projetos se relaciona com um id maior que este valor;
+- As atividades possuem valor de coluna id_projeto até o valor 49, porém temos 1500 projetos, ou seja, não é possível fazer o relacionamento entre a maioria deles;
+- As atividades possuem valor de coluna id_projeto 0, porém não há existência desse projeto; entre outros
+
+Além disso, podemos procurar por padrões/anomalias de forma estatística. Através de Python, realizei uma construção bem simples, que permite visualizarmos o comportamento das notas (tabela **notas**):
+
+Histograma de notas finais: podemos através dele como estão distribuídas as notas finais. Percemos que ocorre de alguma forma "binária", portanto, esse valor acaba sendo 0 ou 10, com exceção dos casos de valor nulo. Também notamos como há maior frequência de valores 10
+
+![Histograma notas finais](https://user-images.githubusercontent.com/33936130/184229926-c844d481-7d18-4b1d-83f4-f00b6a4941da.png)
+
+Boxplot das notas 1, 2, 3 e 4: percebemos que não há outliers e que as notas se comportam de forma semelhante, acabamos vendo que há um comportamento que não contem inconsistências.
+
+![Boxplot notas](https://user-images.githubusercontent.com/33936130/184229939-c3165b22-f292-47ca-a46b-f92f809b3d40.png)
+
+
 ## Fase 3
 
 Como já citado acima, os arquivos para esta etapa - com todas as queries que foram utilizadas- encontram-se em **_Fase 3 - Queries.txt_**
