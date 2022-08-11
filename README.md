@@ -27,13 +27,13 @@ Já para a tabela *Endereço* usei valores gerados aleatoriamente por meio de Go
 
 1. Para auxiliar os professores a terem uma visão panorâmica, entendo que é importante terem um comparativo de quais projetos possuem atividades com baixas notas, pois acaba sendo um indicativo de que deve-se olhar mais de perto esses projetos. Desta forma, criei duas views que podem auxiliar nesse sentido:
 
-Visão geral dos projetos, já calculado a média das notas
-
-![image](https://user-images.githubusercontent.com/33936130/184224053-c8878292-d8a6-409a-94aa-da6e6278e800.png)
-
 Visão geral de atividade por atividade, nota a nota
 
 ![image](https://user-images.githubusercontent.com/33936130/184224745-c39f72d9-3b48-4d53-9159-c176384afaf3.png)
+
+Visão geral dos projetos, já calculado a média das notas
+
+![image](https://user-images.githubusercontent.com/33936130/184224053-c8878292-d8a6-409a-94aa-da6e6278e800.png)
 
 
 ## Fase 3
