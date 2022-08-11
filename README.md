@@ -2,7 +2,7 @@
 
 ## Fase 1
 
-Para esta etapa foi necessário todo desenvolvimento por trás da criação do banco de dados assim como a criação do dashboard.
+Para esta etapa foi necessário todo desenvolvimento por trás da criação do banco de dados assim como do dashboard.
 
 Em se tratando do **banco de dados**, não haviam informações para popular a tabela *Sexo*, *Ativo* e *Endereço*, portanto estabeleci como convenção os valores baixo:
 
