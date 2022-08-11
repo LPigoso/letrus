@@ -51,10 +51,10 @@ Também podemos notar quais cidades possuem maior aderência. (Neste caso, enten
 
 **3.** Sobre padrões e anomalias, há algumas situações que pude notar durante a prática. Como:
 
-- Os projetos, apesar de conterem id, sem nome definidos;
-- Os projetos que estão relacionados a id_usuario inexistente - não há usuários com id acima de 1500, porém a maioria dos projetos se relaciona com um id maior que este valor;
-- As atividades possuem valor de coluna id_projeto até o valor 49, porém temos 1500 projetos, ou seja, não é possível fazer o relacionamento entre a maioria deles;
-- As atividades possuem valor de coluna id_projeto 0, porém não há existência desse projeto; entre outros
+- Há projetos, apesar de conterem _id_, sem nome definidos;
+- Há projetos que estão relacionados a _id_usuario_ inexistente - não há usuários com id acima de 1500, porém a maioria dos projetos se relaciona com um id maior que este valor;
+- As atividades possuem valor de coluna _id_projeto_ até o valor 49, porém temos 1500 projetos, ou seja, não é possível fazer o relacionamento entre a maioria deles;
+- As atividades possuem valor de coluna _id_projeto_ 0, porém não há existência desse projeto; entre outros
 
 Além disso, podemos procurar por padrões/anomalias de forma estatística. Através de **_Python_**, realizei uma construção bem simples, que permite visualizarmos o comportamento das notas (tabela **notas**). Há inúmeras outras análises estatísticas que podem ser realizadas nesta e em outras tabelas:
 
